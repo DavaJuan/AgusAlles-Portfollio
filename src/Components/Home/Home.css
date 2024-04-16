@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+.home-container{
+    display: grid;
+    grid-template-columns:  2fr 1fr;
+    height: 100%;
+    font-family: "Oswald", sans-serif;
+    color: #F34EEC;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(./img/back.jpg) no-repeat center center;
+    background-size: cover; 
+}
+
+.item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+  }
+
+  .item1 h2{
+    font-size: 7rem;
+  }
+
+  .item1 p{
+    font-size: 1.3rem;
+  }
+
+  .item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.image{
+    max-height: 700px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 860px){
+    .item1 h2{
+        font-size: 4rem;
+      }
+
+      .item1 p{
+        font-size: 1rem;
+      } 
+
+      .image{
+        height: 500px;
+    }
+}
+
+
+
+@media only screen and (max-width: 510px){
+    .home-container{
+        grid-template-columns:  1fr;
+        background: linear-gradient(rgba(5,7,12,0.80),rgba(5,7,12,0.80)),
+        url(./img/Agus.jpeg) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .item1 h2{
+      margin-bottom: 10px;
+    }
+
+    .item2{
+        display: none;
+      }
+}
