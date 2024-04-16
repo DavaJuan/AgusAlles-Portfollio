@@ -11,14 +11,18 @@ const NavBar = () => {
         navRef.current.classList.toggle('responsive_nav');
     } 
 
+    const hideNavbar =()=>{
+        navRef.current.classList.remove("responsive_nav")
+      }
+
   return (
       <header className='nav-container'>
         <img className='nav-logo' src={Logo} alt="logo" />
         <nav className='nav-links' ref={navRef}>
-            <a href='#sobreMi'>sobre mi</a>
-            <a href='#planes'>planes</a>
-            <a href='/#'>cambios</a>
-            <a href='/#'>contacto</a>
+            <a onClick={hideNavbar} href='#sobreMi'>sobre mi</a>
+            <a onClick={hideNavbar} href='#planes'>planes</a>
+            <a onClick={hideNavbar} href='/#'>cambios</a>
+            <a onClick={hideNavbar} href='/#'>contacto</a>
             <button className='nav-btn nav-close' onClick={showNav}>
                 <FaTimes />
             </button>
