@@ -12,7 +12,7 @@ const Cursos = () => {
       };
 
   return (
-    <div className='grid-container'>
+    <div id='planes' className='grid-container'>
         <div className='img-container'>
             <img className='agus-img' src={Agus2} alt="agus" />
         </div>

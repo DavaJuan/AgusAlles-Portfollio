@@ -2,7 +2,7 @@ import './TextInfo.css';
 
 const TextInfo = () => {
   return (
-    <div className='text-info'>
+    <div id='sobreMi' className='text-info'>
 
         <h3>sobre mi:</h3>
 

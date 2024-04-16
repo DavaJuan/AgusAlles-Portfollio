@@ -15,10 +15,10 @@ const NavBar = () => {
       <header className='nav-container'>
         <img className='nav-logo' src={Logo} alt="logo" />
         <nav className='nav-links' ref={navRef}>
-            <p>sobre mi</p>
-            <p>cursos</p>
-            <p>cambios</p>
-            <p>contacto</p>
+            <a href='#sobreMi'>sobre mi</a>
+            <a href='#planes'>planes</a>
+            <a href='/#'>cambios</a>
+            <a href='/#'>contacto</a>
             <button className='nav-btn nav-close' onClick={showNav}>
                 <FaTimes />
             </button>

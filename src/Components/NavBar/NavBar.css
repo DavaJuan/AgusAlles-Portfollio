@@ -8,11 +8,6 @@
     background-color: #000;
     color: #fff;
     font-family: "Oswald", sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
 }
 
 .nav-logo{
@@ -24,14 +19,16 @@
     align-items: center;
 }
 
-.nav-links p{
+.nav-links a{
     padding: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     transition: 1s;
+    color: #fff;
+    text-decoration: none;
 }
 
-.nav-links p:hover{
+.nav-links a:hover{
     color: #F34EEC;
     cursor: pointer;
 }
